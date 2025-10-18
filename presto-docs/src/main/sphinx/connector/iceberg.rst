@@ -349,6 +349,10 @@ Property Name                                           Description             
                                                         available values are ``NONE``, ``SNAPPY``, ``GZIP``,
                                                         ``LZ4``, and ``ZSTD``.
 
+                                                        Note: ``LZ4`` is only available when
+                                                        ``iceberg.file-format=ORC``.
+
+
 ``iceberg.max-partitions-per-writer``                   The maximum number of partitions handled per writer.          ``100``                            Yes                 No, write is not supported yet
 
 ``iceberg.minimum-assigned-split-weight``               A decimal value in the range (0, 1] is used as a minimum      ``0.05``                           Yes                 Yes
